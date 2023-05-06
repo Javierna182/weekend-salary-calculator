@@ -9,3 +9,40 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+input {
+    font-size: 17px;
+    border: 1px solid #000;
+}
+
+button{
+    margin-top: 10px;
+    font-size: 20px;
+    float: right;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    font-size: 30px;
+  } 
+
+th{
+    background-color: rgb(187, 187, 187);
+}
+
+th, td{
+    padding: 10px;
+  }
+
+tr:nth-child(even){
+    background-color: #fff;
+  }
+
+tr:nth-child(odd){
+    background-color: #ddd;
+  }
+
+.total-monthly{
+    float: right;
+}

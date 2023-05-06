@@ -12,16 +12,48 @@
         <h1>Salary Calculator</h1>
     </header>
 
-    <div id="add-employee">
+    <div class="addEmployee">
         <h1>Add Employee</h1>
         <input placeholder="Frist Name" id="nameInput" />
         <input placeholder="Last Name" id="nameInput" />
         <input placeholder="ID" id="nameInput" />
         <input placeholder="Title" id="nameInput" />
         <input placeholder="Annual Salary" id="nameInput" />
-        <button id="submitButton">Submit</button>
-
+        
     </div>
+    
+    <div>
+        <button id="submitButton">Submit</button>
+    </div>
+
+    <div id="employees-tittle">
+        <h1>Employees</h1>
+    </div>
+    
+    <table>
+        <tr>
+            <th>Frist Name</th>
+            <th>Last Name</th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Annual Salary</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>javi</td>
+            <td>navarro</td>
+            <td>1234</td>
+            <td>el mejor</td>
+            <td>$30.000000</td>
+            <td>
+                <button id="deleteButton">Delete</button>
+            </td>    
+    </table>
+    
+    <div class="total-monthly">
+        <h1>Total Monthly:</h1>
+    </div>
+
     <script src="client.js"></script>
 </body>
 </html>
