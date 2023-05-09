@@ -13,7 +13,7 @@ function totalAdd (array){
     } 
     if (total/12 >= 20000){
         document.querySelector('#total-monthly').className = 'red';
-    }
+    } 
 }
 
 function addInfoDiv(event){
@@ -24,7 +24,7 @@ event.preventDefault();
 //get submitted inputs
 let firstName = document.getElementById('firstName').value;
 let lastName = document.getElementById('lastName').value;
-let ID = Number(document.getElementById('ID').value);
+let ID = (document.getElementById('ID').value);
 let title = document.getElementById('title').value;
 let annualSalary = Number(document.getElementById('annualSalary').value);
 totalMoCount.push(annualSalary);
@@ -43,20 +43,8 @@ document.querySelector('#employee-table').innerHTML +=
 </tr>
 `;
 
-firstName = document.getElementById('firstName');
-firstName.value = '';
 
-lastName = document.getElementById('lastName')
-lastName.value = '';
-
-ID = document.getElementById('ID');
-ID.value = '';
-
-title = document.getElementById('title');
-title.value = '';
-
-annualSalary = document.getElementById('annualSalary');
-annualSalary.value = '';
+document.querySelector('.addEmployee').reset();
 
 // increment total monthly
 totalMonthly += 0;
