@@ -57,3 +57,7 @@ tbody:nth-child(odd){
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-align: right;
 }
+
+.red{
+  background-color: red;
+}

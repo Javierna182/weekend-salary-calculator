@@ -12,14 +12,14 @@
         <h1>Salary Calculator</h1>
     </header>
 
-    <div class="addEmployee">
+    <form class="addEmployee">
         <h1>Add Employee</h1>
         <input placeholder="Frist Name" id="firstName" />
         <input placeholder="Last Name" id="lastName" />
         <input placeholder="ID" id="ID" />
         <input placeholder="Title" id="title" />
         <input placeholder="Annual Salary" id="annualSalary" />   
-    </div>
+    </form>
     
     <div>
         <button onclick="AddInfoDiv(event)">Submit</button>
@@ -29,7 +29,7 @@
         <h1>Employees</h1>
     </div>
 
-    <table>
+    <table id="employee-table">
         <thead>
           <tr>
             <th>Frist Name</th>
@@ -40,7 +40,6 @@
             <th>Delete</th>
           </tr>
         </thead>
-        <div id="total-monthly"> Total Monthly: $</div>
         <!-- <tbody>
         <tr>
             <td>javi</td>
@@ -56,7 +55,7 @@
     
         <!-- <div id="total-monthly"> Total Monthly: 0</div> -->
     </table>
-    
+    <div id="total-monthly"> Total Monthly: $</div>
     <!-- <div id="total-monthly"> Total Monthly: 0</div> -->
 
     <script src="client.js"></script>
