@@ -16,7 +16,7 @@ function totalAdd (array){
     }
 }
 
-function AddInfoDiv(event){
+function addInfoDiv(event){
     
 // prevents form from refreshing    
 event.preventDefault();
@@ -43,13 +43,20 @@ document.querySelector('#employee-table').innerHTML +=
 </tr>
 `;
 
+firstName = document.getElementById('firstName');
+firstName.value = '';
 
+lastName = document.getElementById('lastName')
+lastName.value = '';
+
+ID = document.getElementById('ID');
+ID.value = '';
+
+title = document.getElementById('title');
+title.value = '';
 
 annualSalary = document.getElementById('annualSalary');
-
 annualSalary.value = '';
-
-// <td><button onclick="removeDiv(event)">Delete</button></div></td>    
 
 // increment total monthly
 totalMonthly += 0;
