@@ -7,6 +7,7 @@ let totalMoCount = [];
 let total = 0;
 
 function totalAdd (array){
+    total = 0;
     for(let numbers of array){
         total += numbers;
         console.log(total);
